@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+     />
+
+</head>
+
+<body>
+    <header class="site-header">
+         <nav class="navbar">
+
+        <!-- Website / Resume name -->
+        <a href="home.html" class="logo">Raylan Portfolio</a>
+
+        <!-- Navigation -->
+            <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#services">Services</a></li>
+             </ul>
+
+         </nav>
+    </header>
+   
+    <div class="container2" style="display:flex; background-image: url(../asset/image/bg1.png);">
+
+         <div style="flex: 1; display:flex;  flex-direction: column; align-items: start; padding:40px ">
+              
+               <h1> Hi meow meow meow meow</h1>
+               <p style= "margin-bottom: 40px;">
+kahit ano nang ilagay ko dito basta mahaba 
+at nababasa divahh habaan mo pa kita mo 
+yung sa iba sobrang haba tapos sayo sobrang 
+ikli lang para marami silang mababasa
+                </p>
+                <a href="resume.html" class="button">
+                    Contact me
+                </a>
+             
+        </div> 
+        <div style="flex:1; display:flex;  flex-direction: column; justify-content: center; ">
+             <div>
+
+                <img src = "../asset/image/menobg.png" style = "width:40vw; padding: 4vw  ">
+           
+            </div>
+        </div> 
+
+   </div>
+
+
+ <div style = "background-color: #F3F7FA;flex-direction:column; background-image: url(../asset/image/bg2.png);">
+    <div>
+           <div style= "flex:1; display: flex; padding: 20px; justify-content: center; align-items:center;">
+                    <img src="../asset/image/working.png" alt="My Image">
+           </div>
+           <div style= "display: flex; flex-direction: column; flex:1; justify-content: center; align-items:start">
+                             
+                             <h2>About Me</h2>
+                             <p>Hi! I’m a fresh Computer Science graduate with a passion for web development and game development. I enjoy building websites, applications, and interactive experiences while exploring new technologies and improving my programming skills. I’m eager to gain real-world experience, take on new challenges, and continuously learn and grow as a developer. I’m excited to apply my knowledge, develop my skills further, and create practical and engaging digital experiences. Feel free to browse this website to learn more about my projects, experiences, and work.</p>
+<a href="resume.html" class="button">
+                    View my CV
+                </a>
+                </div>
+
+
+     
+   </div>
+    
+          
+
+         <div style= "display: flex; flex-direction:column; width: 100%; column-gap: 20px;"> 
+                 <h1>My Key Skills : </h1>
+                   <div style= "display: flex; flex-direction:row; width:100%;padding-bottom:50px; gap: 30px"> 
+
+
+                         <div class= "skill" style= "flex:1"><h6 style="font-size: 20px; margin:0px;">JAVA</h6></div>
+                         <div class= "skill" style= "flex:1"><h6 style="font-size: 20px; margin:0px;">C#</h6></div>
+                         <div class= "skill" style= "flex:1"><h6 style="font-size: 20px; margin:0px;">HTML</h6></div>
+                         <div class= "skill" style= "flex:1"><h6 style="font-size: 20px; margin:0px;">CSS</h6></div>
+                         <div class= "skill" style= "flex:1"><h6 style="font-size: 20px; margin:0px;">Javascript</h6></div>
+                         <div class= "skill" style= "flex:1"><h6 style="font-size: 20px; margin:0px;">SQL</h6></div>
+
+
+ 
+                  </div>
+
+         </div>
+
+</div>
+  
+
+                <div style= "display:flex; flex-direction: column; height: 130vh; width: 100%;">
+                     <div style= " display: flex; flex-direction: column; flex:1; justify-content: flex-end; align-items:center">
+                             <h3>What i do</h3>
+                             <h2 style="text-align: center">We Make Designs <br> that Lead and Inspire</h2>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                     </div>
+
+                     <div class="swiper mySwiper"  style= "background-color: #F3F7FA; flex:2; display: flex; justify-content: center; align-items: center;">
+                            
+                                <div class="swiper-wrapper" style="justify-content: normal; align-items: normal;">  
+
+                                       <div class="swiper-slide" style= "height: 100%; width: 200px; display: flex; justify-content: center; align-items: center;">
+                                            <div class="swiper-card">
+                                                  <img src="../asset/icon/programing.png" class="icon">
+                                                  <h4>Web Development</h4>
+                                                  <p  style= "margin-bottom: 30px">Developing responsive and interactive websites with a focus on functionality, usability, and clean design.</p>
+                                                  <a href="#" style="text-decoration: none; color: black; padding: 10px"> View Project <span>→</span> </a>
+                                            </div>
+
+                                       </div>
+
+                                       <div class="swiper-slide" style= "height: 100%; width: 200px; display: flex; justify-content: center; align-items: center;">
+                                            <div class="swiper-card">
+                                                  <img src="../asset/icon/game-development.png" class="icon">
+                                                  <h4>Game Development</h4>
+                                                  <p  style= "margin-bottom: 30px">Creating interactive games with gameplay mechanics, user interfaces, and engaging player experiences.</p>
+                                                  <a href="#" style="text-decoration: none; color: black; padding: 10px"> View Project <span>→</span> </a>
+                                            </div>
+
+                                       </div>
+
+                                       <div class="swiper-slide" style= "height: 100%; width: 200px; display: flex; justify-content: center; align-items: center;">
+                                            <div class="swiper-card">
+                                                  <img src="../asset/icon/digital-art.png" class="icon">
+                                                  <h4>Technical Art</h4>
+                                                  <p  style= "margin-bottom: 30px">Combining art and programming to create visual assets, effects, animations, and interactive systems for digital experiences and games.</p>
+                                                  <a href="#" style="text-decoration: none; color: black; padding: 10px"> View Project <span>→</span> </a>
+                                            </div>
+
+                                       </div>
+
+                                       <div class="swiper-slide" style= "height: 100%; width: 200px; display: flex; justify-content: center; align-items: center;">
+                                            <div class="swiper-card">
+                                                  <img src="../asset/icon/programing.png" class="icon">
+                                                  <h4>Web Development</h4>
+                                                  <p  style= "margin-bottom: 30px">Developing responsive and interactive websites with a focus on functionality, usability, and clean design.</p>
+                                                  <a href="#" style="text-decoration: none; color: black; padding: 10px"> View Project <span>→</span> </a>
+                                            </div>
+
+                                       </div>
+
+
+                                  
+
+                                 </div>
+                                 <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                 <div class="swiper-pagination"></div>  
+
+                            
+
+ 
+
+                     </div>
+
+           </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+
+            768: {
+                slidesPerView: 3
+            }
+        }
+    });
+
+ </script>
+
+
+
+</body>
+</html>
