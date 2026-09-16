@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Raylan Portfolio</title>
-     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/swiper.css">
+    <title>My Website</title>
+     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/swiper.css">
 
     <link
         rel="stylesheet"
@@ -14,49 +14,34 @@
 </head>
 
 <body>
+    <header class="site-header">
+         <nav class="navbar">
 
-      <header class="site-header"> 
-             <nav class="navbar"> 
-                 <a href="index.html" class="logo">Raylan Portfolio </a>
+        <!-- Website / Resume name -->
+        <a href="home.html" class="logo">Raylan Portfolio</a>
 
+        <!-- Navigation -->
+            <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#services">Services</a></li>
+             </ul>
 
-                 <ul class="nav-links"> 
-                      <li> <a href="index.html"> Home </a> </li> 
-                      <li> <a href="project.html"> View Work </a> </li> 
-                      <li> <a href="contact.html"> Contact </a> </li> 
-                 </ul> 
-
-                 <button class="burger" id="burger"> ☰ </button> 
-             </nav> 
-
-
-            <div class="burger-menu" id="burgerMenu"> 
-                 <a href="index.html">Home</a> 
-                 <a href="project.html">View Work</a> 
-                 <a href="contact.html">Contact</a> 
-           </div> 
-      </header> 
-
-
-<script> 
-      const burger = document.getElementById("burger");
-      const burgerMenu = document.getElementById("burgerMenu"); 
-
-      burger.addEventListener("click", function () { 
-             burgerMenu.classList.toggle("active"); 
-       }); 
-
-</script>
-
-
+         </nav>
+    </header>
    
-    <div class="container2" style="display:flex; background-image: url(asset/image/bg1.png);">
+    <div class="container2" style="display:flex; background-image: url(../asset/image/bg1.png);">
 
          <div style="flex: 1; display:flex;  flex-direction: column; align-items: start; padding:40px ">
               
-               <h1> Hi, I'm Raylan Cruz</h1>
+               <h1> Hi meow meow meow meow</h1>
                <p style= "margin-bottom: 40px;">
-A Computer Science graduate passionate about building websites, applications, and interactive games. I enjoy learning new technologies and turning ideas into functional digital experiences.
+kahit ano nang ilagay ko dito basta mahaba 
+at nababasa divahh habaan mo pa kita mo 
+yung sa iba sobrang haba tapos sayo sobrang 
+ikli lang para marami silang mababasa
                 </p>
                 <a href="resume.html" class="button">
                     Contact me
@@ -66,7 +51,7 @@ A Computer Science graduate passionate about building websites, applications, an
         <div style="flex:1; display:flex;  flex-direction: column; justify-content: center; ">
              <div>
 
-                <img class ="reimg" src = "asset/image/menobg.png" style = "padding: 4vw  ">
+                <img src = "../asset/image/menobg.png" style = "width:40vw; padding: 4vw  ">
            
             </div>
         </div> 
@@ -74,16 +59,16 @@ A Computer Science graduate passionate about building websites, applications, an
    </div>
 
 
- <div style = "background-color: #F3F7FA;flex-direction:column; background-image: url(asset/image/bg2.png);">
-    <div class="container3">
+ <div style = "background-color: #F3F7FA;flex-direction:column; background-image: url(../asset/image/bg2.png);">
+    <div>
            <div style= "flex:1; display: flex; padding: 20px; justify-content: center; align-items:center;">
-                    <img class="reimg" src="asset/image/working.png" alt="My Image">
+                    <img src="../asset/image/working.png" alt="My Image">
            </div>
-           <div style= "display: flex; flex-direction: column; flex:1; justify-content: center; align-items:center">
+           <div style= "display: flex; flex-direction: column; flex:1; justify-content: center; align-items:start">
                              
                              <h2>About Me</h2>
                              <p>Hi! I’m a fresh Computer Science graduate with a passion for web development and game development. I enjoy building websites, applications, and interactive experiences while exploring new technologies and improving my programming skills. I’m eager to gain real-world experience, take on new challenges, and continuously learn and grow as a developer. I’m excited to apply my knowledge, develop my skills further, and create practical and engaging digital experiences. Feel free to browse this website to learn more about my projects, experiences, and work.</p>
-<a href="resume.html" class="button" style="margin-bottom: 50px;">
+<a href="resume.html" class="button">
                     View my CV
                 </a>
                 </div>
@@ -96,16 +81,15 @@ A Computer Science graduate passionate about building websites, applications, an
 
          <div style= "display: flex; flex-direction:column; width: 100%; column-gap: 20px;"> 
                  <h1>My Key Skills : </h1>
-                   <div  style= "display: flex; width:100%;padding-bottom:50px; gap: 30px ; flex-wrap: wrap"> 
+                   <div style= "display: flex; flex-direction:row; width:100%;padding-bottom:50px; gap: 30px"> 
 
 
-                         <div class= "skill" ><h6 style="font-size: 20px; margin:0px;">JAVA</h6></div>
-                         <div class= "skill" ><h6 style="font-size: 20px; margin:1px 70px;">C#</h6></div>
-                         <div class= "skill" ><h6 style="font-size: 20px; margin:1px 70px;">HTML</h6></div>
-                         <div class= "skill" ><h6 style="font-size: 20px; margin:1px 70px;">CSS</h6></div>
-                         <div class= "skill" ><h6 style="font-size: 20px; margin:1px 70px;">Javascript</h6></div>
-                         <div class= "skill" ><h6 style="font-size: 20px; margin:1px 70px;">SQL</h6></div>
-                         <div class= "skill" ><h6 style="font-size: 20px; margin:1px 70px;">Dart</h6></div>
+                         <div class= "skill" style= "flex:1"><h6 style="font-size: 20px; margin:0px;">JAVA</h6></div>
+                         <div class= "skill" style= "flex:1"><h6 style="font-size: 20px; margin:0px;">C#</h6></div>
+                         <div class= "skill" style= "flex:1"><h6 style="font-size: 20px; margin:0px;">HTML</h6></div>
+                         <div class= "skill" style= "flex:1"><h6 style="font-size: 20px; margin:0px;">CSS</h6></div>
+                         <div class= "skill" style= "flex:1"><h6 style="font-size: 20px; margin:0px;">Javascript</h6></div>
+                         <div class= "skill" style= "flex:1"><h6 style="font-size: 20px; margin:0px;">SQL</h6></div>
 
 
  
@@ -118,9 +102,9 @@ A Computer Science graduate passionate about building websites, applications, an
 
                 <div style= "display:flex; flex-direction: column; height: 130vh; width: 100%;">
                      <div style= " display: flex; flex-direction: column; flex:1; justify-content: flex-end; align-items:center">
-                             <h3 style="margin-top:30px;">What i do</h3>
-                             <h2 style="text-align: center">I Build Digital Experiences Through Code and Creativity</h2>
-                             <p>I develop websites, games, and interactive digital experiences by combining programming, design, and creativity.</p>
+                             <h3>What i do</h3>
+                             <h2 style="text-align: center">We Make Designs <br> that Lead and Inspire</h2>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                      </div>
 
                      <div class="swiper mySwiper"  style= "background-color: #F3F7FA; flex:2; display: flex; justify-content: center; align-items: center;">
@@ -129,35 +113,43 @@ A Computer Science graduate passionate about building websites, applications, an
 
                                        <div class="swiper-slide" style= "height: 100%; width: 200px; display: flex; justify-content: center; align-items: center;">
                                             <div class="swiper-card">
-                                                  <img src="asset/icon/programing.png" class="icon">
+                                                  <img src="../asset/icon/programing.png" class="icon">
                                                   <h4>Web Development</h4>
                                                   <p  style= "margin-bottom: 30px">Developing responsive and interactive websites with a focus on functionality, usability, and clean design.</p>
-                                                  <a href="project.html?tab=web" style="text-decoration: none; color: black; padding: 10px"> View Project <span>→</span> </a>
+                                                  <a href="#" style="text-decoration: none; color: black; padding: 10px"> View Project <span>→</span> </a>
                                             </div>
 
                                        </div>
 
                                        <div class="swiper-slide" style= "height: 100%; width: 200px; display: flex; justify-content: center; align-items: center;">
                                             <div class="swiper-card">
-                                                  <img src="asset/icon/game-development.png" class="icon">
+                                                  <img src="../asset/icon/game-development.png" class="icon">
                                                   <h4>Game Development</h4>
                                                   <p  style= "margin-bottom: 30px">Creating interactive games with gameplay mechanics, user interfaces, and engaging player experiences.</p>
-                                                  <a href="project.html?tab=game" style="text-decoration: none; color: black; padding: 10px"> View Project <span>→</span> </a>
+                                                  <a href="#" style="text-decoration: none; color: black; padding: 10px"> View Project <span>→</span> </a>
                                             </div>
 
                                        </div>
 
                                        <div class="swiper-slide" style= "height: 100%; width: 200px; display: flex; justify-content: center; align-items: center;">
                                             <div class="swiper-card">
-                                                  <img src="asset/icon/digital-art.png" class="icon">
+                                                  <img src="../asset/icon/digital-art.png" class="icon">
                                                   <h4>Technical Art</h4>
                                                   <p  style= "margin-bottom: 30px">Combining art and programming to create visual assets, effects, animations, and interactive systems for digital experiences and games.</p>
-                                                  <a href="project.html?tab=art" style="text-decoration: none; color: black; padding: 10px"> View Project <span>→</span> </a>
+                                                  <a href="#" style="text-decoration: none; color: black; padding: 10px"> View Project <span>→</span> </a>
                                             </div>
 
                                        </div>
 
-                                      
+                                       <div class="swiper-slide" style= "height: 100%; width: 200px; display: flex; justify-content: center; align-items: center;">
+                                            <div class="swiper-card">
+                                                  <img src="../asset/icon/programing.png" class="icon">
+                                                  <h4>Web Development</h4>
+                                                  <p  style= "margin-bottom: 30px">Developing responsive and interactive websites with a focus on functionality, usability, and clean design.</p>
+                                                  <a href="#" style="text-decoration: none; color: black; padding: 10px"> View Project <span>→</span> </a>
+                                            </div>
+
+                                       </div>
 
 
                                   
@@ -175,33 +167,7 @@ A Computer Science graduate passionate about building websites, applications, an
 
            </div>
 
-<footer class="site-footer">
-    <div class="footer-content">
 
-        <div class="footer-section">
-            <h2>Raylan Portfolio</h2>
-            <p>
-                A Computer Science graduate passionate about web development,
-                game development, and creating digital experiences.
-            </p>
-        </div>
-
-       
-        <div class="footer-section">
-             <h3>Site Map</h3>
-            <ul class="nav-links">
-                  <li><a href="#contact">Contact</a></li>
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#services">View Work</a></li>
-             </ul>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2026 Raylan Portfolio. All Rights Reserved.</p>
-    </div>
-</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -224,12 +190,8 @@ A Computer Science graduate passionate about building websites, applications, an
             0: {
                 slidesPerView: 1
             },
-            700: {
-                slidesPerView: 2
-            },
-            
 
-            1008: {
+            768: {
                 slidesPerView: 3
             }
         }

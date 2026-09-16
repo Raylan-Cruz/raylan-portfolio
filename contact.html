@@ -1,89 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        .tabs {
-            display: flex;
-            gap: 10px;
-        }
-
-        .tab-button {
-            padding: 10px 20px;
-            border: none;
-            background-color: #ddd;
-            cursor: pointer;
-        }
-
-        .tab-button.active {
-            background-color: black;
-            color: white;
-        }
-
-        .tab-content {
-            display: none;
-            padding: 20px;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-    </style>
+    <title>Raylan Portfolio</title>
+     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/swiper.css">
+        <link rel="stylesheet" href="css/projectscss.css">
 </head>
 
+
 <body>
+      <header class="site-header"> 
+             <nav class="navbar"> 
+                 <a href="index.html" class="logo">Raylan Portfolio </a>
 
-    <div class="tabs">
-        <button class="tab-button active" onclick="showTab('home')">
-            Home
-        </button>
 
-        <button class="tab-button" onclick="showTab('about')">
-            About
-        </button>
+                 <ul class="nav-links"> 
+                      <li> <a href="index.html"> Home </a> </li> 
+                      <li> <a href="project.html"> View Work </a> </li> 
+                      <li> <a href="contact.html"> Contact </a> </li> 
+                 </ul> 
 
-        <button class="tab-button" onclick="showTab('contact')">
-            Contact
-        </button>
+                 <button class="burger" id="burger"> ☰ </button> 
+             </nav> 
+
+
+            <div class="burger-menu" id="burgerMenu"> 
+                 <a href="index.html">Home</a> 
+                 <a href="project.html">View Work</a> 
+                 <a href="contact.html">Contact</a> 
+           </div> 
+      </header> 
+
+
+<script> 
+      const burger = document.getElementById("burger");
+      const burgerMenu = document.getElementById("burgerMenu"); 
+
+      burger.addEventListener("click", function () { 
+             burgerMenu.classList.toggle("active"); 
+       }); 
+
+</script>
+
+    <div class="container4" style="height:95vh; background-color:#F3F7FA">
+         <div class="child" style=" height: 100%; width:100%; flex-direction:column; justify-content: center; align-items:end; padding: 35px">
+              <h1 style="font-size:90px;"> Let's <br> Connect!
+              </h1>
+              <p>Have a project in mind? Or just want to say hello?
+              </p>
+         </div>
+         <div class="child" style="height: 100%; width:100%; justify-content: start; align-items:center; padding: 35px">
+               <div style="background-color:white; height:170px; width: 380px;flex-direction:column; padding:35px;">
+                     <div style="flex:1;width:100%; justify-content: start; padding-left:10px;">
+                            <img src="asset/icon/location-pin.png" class="icon" style="height:30px; width:30px;">
+                            <p style="margin-left:30px;"> Based in Metro Manila, Philippines</p>
+                     </div>
+                     <div style="flex:1; width:100%; justify-content: start; padding-left:10px;">
+                            <img src="asset/icon/gmail.png" class="icon" style="height:30px; width:30px;">
+                            <a class="contact" href="mailto:raylanviktorbalmojacruz@gmail.com" style="margin-left:30px;"> raylanviktorbalmojacruz@gmail.com</a>
+                     </div>
+                     <div style="flex:1;width:100%;  justify-content: start; padding-left:10px;">
+                            <img src="asset/icon/github.png" class="icon" style="height:30px; width:30px;">
+                            <a class="contact" href="https://github.com/Raylan-Cruz" style="margin-left:30px;"> github.com/Raylan-Cruz</a>
+                     </div>
+                     <div style="flex:1;width:100%;  justify-content: start; padding-left:10px;">
+                            <img src="asset/icon/linkedin.png" class="icon" style="height:30px; width:30px;">
+                            <a class="contact" href="https://www.linkedin.com/in/raylan-cruz-ab8598420/" style="margin-left:30px;"> www.linkedin.com/in/raylan-cruz</a>
+                     </div>
+               </div>
+         </div>
     </div>
-
-    <div id="home" class="tab-content active">
-        <h2>Home</h2>
-        <p>This is the home content.</p>
-    </div>
-
-    <div id="about" class="tab-content">
-        <h2>About</h2>
-        <p>This is the about content.</p>
-    </div>
-
-    <div id="contact" class="tab-content">
-        <h2>Contact</h2>
-        <p>This is the contact content.</p>
-    </div>
-
-    <script>
-        function showTab(tabName) {
-
-            // Hide all content
-            document.querySelectorAll('.tab-content').forEach(function(tab) {
-                tab.classList.remove('active');
-            });
-
-            // Remove active from all buttons
-            document.querySelectorAll('.tab-button').forEach(function(button) {
-                button.classList.remove('active');
-            });
-
-            // Show selected content
-            document.getElementById(tabName).classList.add('active');
-
-            // Make clicked button active
-            event.target.classList.add('active');
-        }
-    </script>
-
-    <div style= "height: 100vm>
-    </div>
-
 </body>
 </html>

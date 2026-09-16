@@ -45,6 +45,13 @@ font-family: 'Poppins', sans-serif; color:var(--primary-color); margin:10px; fon
 p{
 font-family: 'Poppins', sans-serif; color:var(--secondary-color);  margin:10px;
 }
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.contact:hover {
+    color: var(--blue);
+}
 
 .icon {
     width: 70px;
@@ -84,6 +91,10 @@ justify-content: center; align-items:center;
 .container2 {
         flex-direction: row;
     }
+.container4 h1{
+            text-align: end;
+        }
+
 
 
 .reimg{
@@ -98,8 +109,17 @@ justify-content: center; align-items:center;
         .container2 {
             flex-direction: column-reverse;         
         }
-        .container3 {
+        .container3,
+        .container4 
+        {
             flex-direction: column;         
+        }
+        .container4 h1{
+            text-align: center;
+        }
+        .child{
+            justify-content: center !important; 
+            align-items:center !important;
         }
 
         .reimg{

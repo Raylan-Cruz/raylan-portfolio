@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raylan Portfolio</title>
+     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/swiper.css">
+        <link rel="stylesheet" href="css/projectscss.css">
+
+    <style>
+        .tabs {
+            display: flex;
+            gap: 10px;
+        }
+
+        .tab-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ddd;
+            cursor: pointer;
+    transition: background-color 0.5s ease;
+        }
+
+        .tab-button.active {
+            background-color: var(--orange);
+            color: white;
+    transition: background-color 0.5s ease;
+        }
+
+        .tab-content {
+            display: none;
+
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+      <header class="site-header"> 
+             <nav class="navbar"> 
+                 <a href="index.html" class="logo">Raylan Portfolio </a>
+
+
+                 <ul class="nav-links"> 
+                      <li> <a href="index.html"> Home </a> </li> 
+                      <li> <a href="project.html"> View Work </a> </li> 
+                      <li> <a href="contact.html"> Contact </a> </li> 
+                 </ul> 
+
+                 <button class="burger" id="burger"> ☰ </button> 
+             </nav> 
+
+
+            <div class="burger-menu" id="burgerMenu"> 
+                 <a href="index.html">Home</a> 
+                 <a href="project.html">View Work</a> 
+                 <a href="contact.html">Contact</a> 
+           </div> 
+      </header> 
+
+
+<script> 
+      const burger = document.getElementById("burger");
+      const burgerMenu = document.getElementById("burgerMenu"); 
+
+      burger.addEventListener("click", function () { 
+             burgerMenu.classList.toggle("active"); 
+       }); 
+
+</script>
+ 
+
+    <div class="tabs" style="display:flex;">
+        <button class="tab-button active" onclick="showTab('web', this)" style="flex:1"> 
+            Web Development Projects
+        </button>
+
+        <button class="tab-button" onclick="showTab('game', this)" style="flex:1">
+            Game Development Projects
+        </button>
+
+        <button class="tab-button" onclick="showTab('art', this)" style="flex:1">
+            Technical Art
+        </button>
+    </div>
+
+    <div id="web" class="tab-content active">
+        <div class="about-container" style="height:95vh;width:100%; background-color: #F3F7FA">
+
+             <div class="about-image" style="flex:1">
+                  <img src="asset/image/web2.png" style="width:80%">
+             </div>
+
+             <div class="about-text" style="flex:1; flex-direction:column; ">
+                  <h1>LogiXplore</h1>
+                   <p style= "margin-bottom: 40px; text-align: center">
+                     A learning website designed to help students understand digital logic and logic gates through interactive lessons, visual simulations, practice activities, and quizzes that make learning more engaging and easier to understand.
+                   </p>
+                   <a href="https://www.logixplore.online/" class="button" style="margin-bottom: 50px;">
+                       View Projects
+                   </a>
+             </div>
+
+         </div>
+
+
+        <div class="about-container" style="height:95vh; background-color: #0b0b0b">
+             <div class="about-text" style="flex:1; flex-direction:column;">
+                  <h1 style="color: white">Personal Portfolio</h1>
+                   <p style= "margin-bottom: 40px; text-align: center">
+                     A responsive personal portfolio website showcasing my skills, projects, experience, and interests in web development and game development, built to present my work and development journey.
+                   </p>
+                   <a href="index.html" class="button" style="margin-bottom: 50px;">
+                       View Projects
+                    </a>
+             </div>
+
+             <div class="about-image" style="flex:1">
+                  <img src="asset/image/web1.png" style="width:80%">
+             </div>
+
+
+
+         </div>
+
+
+    </div>
+
+    <div id="game" class="tab-content">
+        <div class="about-container" style="height:95vh;width:100%; background-color: #F3F7FA">
+
+             <div class="about-image" style="flex:1">
+                  <img src="asset/image/game1.png" style="width:80%">
+             </div>
+
+             <div class="about-text" style="flex:1; flex-direction:column; ">
+                  <h1>2D Farming</h1>
+                   <p style= "margin-bottom: 40px; text-align: center">
+                      A work-in-progress 2D farming and life-simulation game where players can grow crops, explore the environment, manage their farm, and experience an interactive pixel-art world inspired by classic farming games.
+                   </p>
+                   <a href="https://raylan-cruz.github.io/2dgamefarmlife/" class="button" style="margin-bottom: 50px;">
+                       View Game
+                   </a>
+             </div>
+
+         </div>
+
+
+        <div class="about-container" style="height:95vh; background-color: #0b0b0b">
+             <div class="about-text" style="flex:1; flex-direction:column;">
+                  <h1 style="color: white">Slime Shooter</h1>
+                   <p style= "margin-bottom: 40px; text-align: center">
+                       A 2D action platformer featuring a slime character battling enemies with fast-paced shooting mechanics, movement, and combat.
+                   </p>
+                   <a href="https://raylan-cruz.github.io/2dgameliquimorph3/" class="button" style="margin-bottom: 50px;">
+                       View Game
+                    </a>
+             </div>
+
+             <div class="about-image" style="flex:1">
+                  <img src="asset/image/game2.png" style="width:80%">
+             </div>
+
+
+
+         </div>
+
+    </div>
+
+<div id="art" class="tab-content" style="padding: 40px 5%;">
+
+    <div style="
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+    ">
+
+        <h2 style="
+            font-size: 35px;
+            color: var(--blue);
+            margin: 0 0 10px;
+            line-height: 1.2;
+        ">
+            Technical Art
+        </h2>
+
+        <p style="
+            font-size: 16px;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        ">
+            A collection of my technical art, game assets, sprites,
+            character designs, and other visual work.
+        </p>
+
+    </div>
+
+
+    <div style="
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    ">
+
+
+        <!-- ART 1 -->
+
+        <div style="
+            display: block;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        ">
+
+            <img
+                src="asset/gameart/house.png"
+                alt="2D Game Art"
+                style="
+                    display: block;
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                "
+            >
+
+            <div style="
+                display: block;
+                padding: 20px;
+            ">
+
+                <h3 style="
+                    margin: 0 0 10px;
+                    color: #222;
+                    line-height: 1.2;
+                ">
+                    2D Game Art
+                </h3>
+
+                <p style="
+                    margin: 0;
+                    color: #555;
+                    line-height: 1.5;
+                ">
+                    2D artwork and assets created for my game projects.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ART 2 -->
+
+        <div style="
+            display: block;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        ">
+
+            <img
+                src="asset/gameart/128anatomy1.png"
+                alt="Character Design"
+                style="
+                    display: block;
+                    width: 80%;
+                    height: 300px;
+                    object-fit: cover;
+                "
+            >
+
+            <div style="
+                display: block;
+                padding: 20px;
+            ">
+
+                <h3 style="
+                    margin: 0 0 10px;
+                    color: #222;
+                    line-height: 1.2;
+                ">
+                    Character Design
+                </h3>
+
+                <p style="
+                    margin: 0;
+                    color: #555;
+                    line-height: 1.5;
+                ">
+                    Character designs and sprites created for game development.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ART 3 -->
+
+        <div style="
+            display: block;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        ">
+
+            <img
+                src="asset/gameart/LiquiMorphSpriteSheeet.png"
+                alt="Game Assets"
+                style="
+                    display: block;
+                    width: 80%;
+                    height: 300px;
+                    object-fit: cover;
+                "
+            >
+
+            <div style="
+                display: block;
+                padding: 20px;
+            ">
+
+                <h3 style="
+                    margin: 0 0 10px;
+                    color: #222;
+                    line-height: 1.2;
+                ">
+                    Game Assets
+                </h3>
+
+                <p style="
+                    margin: 0;
+                    color: #555;
+                    line-height: 1.5;
+                ">
+                    Visual assets created for interactive projects.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ART 4 -->
+
+        <div style="
+            display: block;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        ">
+
+            <img
+                src="asset/gameart/animation.gif"
+                alt="Pixel Art"
+                style="
+                    display: block;
+                    width: 70%;
+                    height: 300px;
+                    object-fit: cover;
+                "
+            >
+
+            <div style="
+                display: block;
+                padding: 20px;
+            ">
+
+                <h3 style="
+                    margin: 0 0 10px;
+                    color: #222;
+                    line-height: 1.2;
+                ">
+                    Animation
+                </h3>
+
+                <p style="
+                    margin: 0;
+                    color: #555;
+                    line-height: 1.5;
+                ">
+                   Creating 2D animations, character movements, and visual effects to bring game elements to life.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <script>
+    function showTab(tabName, button) {
+
+        document.querySelectorAll('.tab-content').forEach(function(tab) {
+            tab.classList.remove('active');
+        });
+
+        document.querySelectorAll('.tab-button').forEach(function(button) {
+            button.classList.remove('active');
+        });
+
+        document.getElementById(tabName).classList.add('active');
+
+        if (button) {
+            button.classList.add('active');
+        }
+    }
+
+    // Check URL for selected tab
+    const params = new URLSearchParams(window.location.search);
+    const selectedTab = params.get('tab');
+
+    if (selectedTab && document.getElementById(selectedTab)) {
+        const button = document.querySelector(
+            `.tab-button[onclick*="'${selectedTab}'"]`
+        );
+
+        showTab(selectedTab, button);
+    }
+</script>
+
+    <div style= "height: 100vm>
+    </div>
+
+</body>
+</html>
